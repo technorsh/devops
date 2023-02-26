@@ -2,7 +2,7 @@
 # shellcheck disable=SC1091,SC2164,SC2034,SC1072,SC1073,SC1009
 
 # Secure OpenVPN server installer for Debian, Ubuntu, CentOS, Amazon Linux 2, Fedora, Oracle Linux 8, Arch Linux, Rocky Linux and AlmaLinux.
-# https://github.com/angristan/openvpn-install
+# https://github.com/technorsh/devops
 
 function isRoot() {
 	if [ "$EUID" -ne 0 ]; then
@@ -218,7 +218,7 @@ access-control: fd42:42:42:42::/112 allow' >>/etc/unbound/openvpn.conf
 
 function installQuestions() {
 	echo "Welcome to the OpenVPN installer!"
-	echo "The git repository is available at: https://github.com/angristan/openvpn-install"
+	echo "The git repository is available at: https://github.com/technorsh/devops"
 	echo ""
 
 	echo "I need to ask you a few questions before starting the setup."
@@ -1304,7 +1304,7 @@ function removeOpenVPN() {
 
 function manageMenu() {
 	echo "Welcome to OpenVPN-install!"
-	echo "The git repository is available at: https://github.com/technorsh/openvpn"
+	echo "The git repository is available at: https://github.com/technorsh/devops"
 	echo ""
 	echo "It looks like OpenVPN is already installed."
 	echo ""
